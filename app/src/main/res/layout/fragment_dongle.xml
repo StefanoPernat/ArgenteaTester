@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -6,12 +6,83 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
                 tools:showIn="@layout/activity_dongle"
                 tools:context=".DongleActivityFragment">
 
     <TextView
-        android:text="Hello World!"
+        android:text="@string/amount_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:gravity="start"/>
 
-</RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/edittext_amount"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_payment"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_payment"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_first_dll"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_first_dll"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_auth"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_auth"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_status"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_status"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_host_totals"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_host_totals"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_closure"
+            style="@style/ArgenteaButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_closure"/>
+    </LinearLayout>
+
+</LinearLayout>
