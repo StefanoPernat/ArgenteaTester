@@ -1,5 +1,6 @@
 package argentea.it.argenteatester.app;
 
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.text.Editable;
@@ -48,10 +49,9 @@ public class DongleActivityFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(s.toString().equals("")){
+                if (s.toString().equals("")) {
                     mButtonPayment.setEnabled(false);
-                }
-                else {
+                } else {
                     mButtonPayment.setEnabled(true);
                 }
             }
@@ -59,5 +59,15 @@ public class DongleActivityFragment extends Fragment {
 
 
         return rootView;
+    }
+
+
+    // NOTE FOR ASIF: Example of howto retrive a preference from settings activity
+    // usage:
+    //          getDonglePreference(getString(R.string.apreferencekey), "")
+
+    private String getDonglePreference(String key, String defaultValue){
+        return
+                PreferenceManager.getDefaultSharedPreferences(getActivity()).getString(key,defaultValue);
     }
 }
