@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/terminal_settings_category"
+        android:key="@string/terminal_settings_category_key">
+
+        <EditTextPreference
+            android:title="@string/terminal_title"
+            android:key="@string/terminal_key"
+            android:defaultValue=""
+            android:summary="@string/terminal_summary"
+            />
+
+        <ListPreference
+            android:title="@string/timeout_title"
+            android:key="@string/timeout_key"
+            android:defaultValue="@string/timeout_default"
+            android:entryValues="@array/timeout_values"
+            android:entries="@array/timeout_label"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/gt_settings_category"
+        android:key="@string/gt_settings_category_key">
+
+        <EditTextPreference
+            android:title="@string/gt_ip_title"
+            android:key="@string/gt_ip_key"
+            android:defaultValue=""/>
+
+        <EditTextPreference
+            android:title="@string/gt_port_title"
+            android:key="@string/gt_port_key"
+            android:defaultValue=""
+            android:inputType="number"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/ssa_settings_category"
+        android:key="@string/ssa_settings_category_key">
+
+        <EditTextPreference
+            android:title="@string/ssa_ip_title"
+            android:key="@string/ssa_ip_key"
+            android:defaultValue=""/>
+
+        <EditTextPreference
+            android:title="@string/ssa_port_title"
+            android:key="@string/ssa_port_key"
+            android:defaultValue=""
+            android:inputType="number"/>
+    </PreferenceCategory>
+</PreferenceScreen>

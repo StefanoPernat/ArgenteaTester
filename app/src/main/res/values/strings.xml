@@ -2,4 +2,37 @@
     <string name="app_name">Argentea</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Settings Activity -->
+    <string name="terminal_settings_category">Terminal</string>
+    <string name="terminal_settings_category_key">terminal_key</string>
+
+    <string name="terminal_key">terminal_id</string>
+    <string name="terminal_title">ID</string>
+    <string name="terminal_summary">Device Terminal ID</string>
+
+    <string name="gt_settings_category">GT</string>
+    <string name="gt_settings_category_key">gt_key</string>
+
+    <string name="gt_ip_key">gt_ip</string>
+    <string name="gt_ip_title">IP Address</string>
+
+    <string name="gt_port_key">gt_port</string>
+    <string name="gt_port_title">Port</string>
+
+    <string name="ssa_settings_category">SSA</string>
+    <string name="ssa_settings_category_key">ssa_key</string>
+
+    <string name="ssa_ip_key">ssa_ip</string>
+    <string name="ssa_ip_title">IP Address</string>
+
+    <string name="ssa_port_key">ssa_port</string>
+    <string name="ssa_port_title">Port</string>
+
+    <string name="general_settings_category">General</string>
+    <string name="general_settings_category_key">general_key</string>
+
+    <string name="timeout_key">timeout_port</string>
+    <string name="timeout_title">Timeout</string>
+    <string name="timeout_default">5</string>
 </resources>
